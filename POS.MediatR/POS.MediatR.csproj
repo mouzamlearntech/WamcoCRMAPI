@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POS.Common\POS.Common.csproj" />
+    <ProjectReference Include="..\POS.Data\POS.Data.csproj" />
+    <ProjectReference Include="..\POS.Domain\POS.Domain.csproj" />
+    <ProjectReference Include="..\POS.Helper\POS.Helper.csproj" />
+    <ProjectReference Include="..\POS.Repository\POS.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TableSetting\Validators\" />
+  </ItemGroup>
+
+</Project>
